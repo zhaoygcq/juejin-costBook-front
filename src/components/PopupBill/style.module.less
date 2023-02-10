@@ -1,0 +1,92 @@
+* {
+    touch-action: pan-x;
+  }
+.addWrap {
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #fff;
+}
+
+.header {
+    margin: 10px;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.filter {
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .time {
+        padding: 2px 6px;
+        border-radius: 10px;
+        border: 1px solid transparent;
+        background-color: #f6f6f6;
+        .arrow {
+            font-size: 16px;
+        }
+    }
+
+    .type span {
+        margin-right: 10px;
+        padding: 2px 6px;
+        border-radius: 10px;
+        border: 1px solid transparent;
+        background-color: #f6f6f6;
+    }
+    
+    .type .active {
+        border-color: #dcf6ff;
+        background-color: rgba(232, 250, 249, 1);
+    }
+}
+
+.money {
+    margin: 10px;
+    font-size: 28px;
+    font-weight: bolder;
+    border-bottom: 1px solid #000;
+    .sufix {
+        margin-right: 10px;
+    }
+}
+
+.typeWarp {
+    margin-bottom: 10px;
+    .typeBody {
+        display: flex;
+        flex-direction: row;
+    }
+    .typeItem {
+        display: flex;
+        flex-direction: column;
+        span {
+            margin: 0 10px;
+            padding: 4px;
+            color: #7a7a7a;
+            border-radius: 50%;
+            background-color: #f6f6f6;
+        }
+
+        .active {
+            color: #fff;
+            background-color: #3280f4;
+        }
+    }
+}
+
+.remark {
+    margin-left: 10px;
+    padding-bottom: 12px;
+    color: #4b67e2;
+    :global {
+      .za-input--textarea {
+        border: 1px solid #e9e9e9;
+        padding:  10px;
+      }
+    }
+  }

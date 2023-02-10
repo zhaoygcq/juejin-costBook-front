@@ -5,6 +5,7 @@ import { post } from "utils/axios";
 import CustomIcon from "@/components/CustomIcon";
 import Captcha from "react-captcha-code";
 import s from "./style.module.less";
+import { useNavigate } from 'react-router-dom'
 
 const Login = () => {
   const [username, setUsername] = useState(""); // 账号
@@ -12,6 +13,7 @@ const Login = () => {
   const [verify, setVerify] = useState(""); // 验证码
   const [captcha, setCaptcha] = useState(""); // 验证码变化后存储值
   const [type, setType] = useState("login"); // 登录注册类型
+  const navigateTo = useNavigate(); // 路由实例
   //  验证码变化，回调方法
   const handleChange = useCallback((captcha) => {
     console.log("captcha", captcha);
@@ -38,6 +40,7 @@ const Login = () => {
         // 将 token 写入 localStorage
         localStorage.setItem("token", data.token);
         Toast.show("登陆成功");
+        navigateTo('/');
       } else {
         if (!verify) {
           Toast.show("请输入验证码");

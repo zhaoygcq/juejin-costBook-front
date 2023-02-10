@@ -48,6 +48,9 @@ export const typeMap = {
     },
     16: {
         icon: 'qita'
+    },
+    17: {
+        icon: 'qita'
     }
 }
 

@@ -2,6 +2,7 @@ import axios from 'axios'
 import { Toast } from 'zarm'
 
 const request = axios.create({
+    baseURL: "/api",
     withCredentials: true,
     headers: {
         'X-Requested-With': 'XMLHttpRequest',
