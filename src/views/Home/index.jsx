@@ -6,7 +6,7 @@ import { get, REFRESH_STATE, LOAD_STATE } from "@/utils"; // Pull 组件需要�
 import PopupType from "@/components/PopupType";
 import PopupDate from "@/components/PopupDate";
 import CustomIcon from '@/components/CustomIcon';
-import PopupAddBill from "../../components/PopupBill";
+import PopupAddBill from "@/components/PopupAddBill";
 import s from "./style.module.less";
 
 const Home = () => {

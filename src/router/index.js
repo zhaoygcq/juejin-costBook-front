@@ -1,6 +1,6 @@
 // router/index.js
 import Home from '@/views/Home'
-import Data from '@/views/Data'
+import Detail from '@/views/Detail'
 import User from '@/views/User'
 import Login from '../views/Login';
 const routes = [
@@ -9,8 +9,8 @@ const routes = [
       component: Home
     },
     {
-      path: "/data",
-      component: Data
+      path: "/detail",
+      component: Detail
     },
     {
       path: "/user",

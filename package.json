@@ -15,6 +15,7 @@
     "lib-flexible": "^0.3.2",
     "postcss-pxtorem": "^6.0.0",
     "prop-types": "^15.8.1",
+    "query-string": "^8.1.0",
     "react": "^16.13.0",
     "react-captcha-code": "^1.0.7",
     "react-dom": "^16.13.0",
