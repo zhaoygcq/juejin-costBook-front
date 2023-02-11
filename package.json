@@ -16,6 +16,7 @@
     "postcss-pxtorem": "^6.0.0",
     "prop-types": "^15.8.1",
     "query-string": "^8.1.0",
+    "rc-form": "^2.4.12",
     "react": "^16.13.0",
     "react-captcha-code": "^1.0.7",
     "react-dom": "^16.13.0",

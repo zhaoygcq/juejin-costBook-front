@@ -1,6 +1,7 @@
 .home {
     display: flex;
     flex-direction: column;
+    padding-bottom: 60px;
     height: 100%;
 }
 .header {
@@ -8,9 +9,11 @@
     left: 0;
     right: 0;
     padding: 10px;
+    z-index: 9999;
     background-color: #3880f6;
     .dataWrap {
         text-align: left;
+        margin-bottom: 10px;
     }
     .expense b,
     .income b {
@@ -30,7 +33,7 @@
 }
 
 .content-wrap {
-    margin-top: 50px;
+    margin-top: 60px;
     height: calc(~"(100% - 50px)");
     overflow: hidden;
     overflow-y: scroll;

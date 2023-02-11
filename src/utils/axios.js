@@ -1,8 +1,8 @@
 import axios from 'axios'
 import { Toast } from 'zarm'
-
+export const baseUrl = '/api'
 const request = axios.create({
-    baseURL: "/api",
+    baseURL: baseUrl,
     withCredentials: true,
     headers: {
         'X-Requested-With': 'XMLHttpRequest',
