@@ -1,0 +1,143 @@
+.data {
+  padding: 20px;
+}
+.total {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+.time {
+    padding: 4px 10px;
+    position: relative;
+    margin-bottom: 10px;
+    font-size: 16px;
+    background-color: #f6f6f6;
+    border-radius: 10px;
+    span {
+      margin-right: 10px;
+    }
+    span:nth-of-type(1)::after {
+      content: "";
+      position: absolute;
+      top: 9px;
+      bottom: 8px;
+      right: 30px;
+      width: 1px;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    .date {
+      font-size: 16px;
+    }
+  }
+  .title {
+    color: #6499ed;
+  }
+  .expense {
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #2e84f4;
+  }
+
+  .income {
+    color: #a2a2a2;
+  }
+}
+
+.structure {
+  .head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    .title {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .tab {
+      span {
+        margin-left: 10px;
+        padding: 4px 8px;
+        border-radius: 4px;
+        background-color: #f6f6f6;
+      }
+      .active {
+        color: #3384f2;
+        background-color: #d1e6ff;
+      }
+    }
+  }
+  .content {
+    .item {
+      margin: 10px 0;
+    }
+    .left {
+      display: flex;
+      align-items: center;
+      .type {
+        display: flex;
+        align-items: center;
+        span {
+          margin-right: 10px;
+        }
+        :global{
+            .za-icon {
+                padding: 4px;
+                color: #fff;
+                background-color: #0281fd;
+                border-radius: 50%;  
+            }
+        }
+      }
+    }
+
+    .right {
+      flex: 1;
+    }
+  }
+}
+
+.proportion {
+    background-color: #fff;
+    padding: 12px;
+    .head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 0;
+      .title {
+        font-size: 18px;
+        color: rgba(0, 0, 0, .9);
+      }
+      .tab {
+        span {
+          display: inline-block;
+          width: 40px;
+          height: 24px;
+          background-color: #f5f5f5;
+          text-align: center;
+          line-height: 24px;
+          margin-left: 10px;
+          border-radius: 4px;
+        }
+        .expense {
+          &.active {
+            background-color: rgba(0, 127, 255, 0.2);
+            color: #007fff;
+          }
+        }
+        .income {
+          &.active {
+            background-color: rgba(236, 190, 37, 0.2);
+            color: rgb(236, 190, 37);
+          }
+        }
+      }
+    }
+    :global {
+      #proportion {
+        width: 100%;
+        height: 400px;
+      }
+    }
+}
