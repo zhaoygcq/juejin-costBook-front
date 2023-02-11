@@ -64,16 +64,15 @@ const Login = () => {
   };
   return (
     <div className={s.auth}>
-      <div className={s.head} />
       <div className={s.tab}>
         <span
-          className={cx({ [s.avtive]: type == "login" })}
+          className={cx({ [s.active]: type == "login" })}
           onClick={() => setType("login")}
         >
           登录
         </span>
         <span
-          className={cx({ [s.avtive]: type == "register" })}
+          className={cx({ [s.active]: type == "register" })}
           onClick={() => setType("register")}
         >
           注册

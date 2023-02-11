@@ -1,11 +1,30 @@
 .auth {
-
+  padding: 20px;
+  .tab {
+    font-size: 16px;
+    color: #5d83e9;
+    margin-bottom: 20px;
+    & > span:first-child {
+      margin-right: 10px;
+    }
+    .active {
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
 }
 
 .form {
     :global {
       .za-cell {
         color: red;
+        .za-cell__inner {
+          padding: 0;
+        }
+        &:after {
+          left: 0;
+          border: 0;
+        }
       }
     }
   }
